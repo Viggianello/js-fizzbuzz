@@ -8,10 +8,18 @@
 console.log (0 + ' dato che sono un informatico inizio a contare da 0');
 for (var num = 1; num < 101 ; num++) {
 
-    if (num % 3 != 0) {
-        console.log (num);
-    }
-    else {
+    if (num % 3 == 0 && num % 15 !=0) {
         console.log('Fizz');
+    }
+    else if(num % 5 == 0 && num % 15 !=0) {
+        console.log('Buzz');
+    }
+
+    else if (num % 15 == 0) {
+        console.log('FizzBuzz');
+    }
+
+    else {
+        console.log (num);
     }
 }
