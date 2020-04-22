@@ -10,17 +10,17 @@
 // al posto dei multipli di 5 stampi "Buzz"
 // al posto dei multipli sia di 3 che di 5 stampi "FizzBuzz"
 console.log (0 + ' dato che sono un informatico inizio a contare da zero');
-for (var num = 1; num < 101 ; num++) {
+for (var num = 1; num <= 100 ; num++) {
+    if (num % 15 == 0) {// potrei anche usare questa condizione (num % 3 == 0 && num % 5 ==0)
+        console.log('FizzBuzz');
+    }
 
-    if (num % 3 == 0 && num % 15 !=0) { // potrei anche usare questa condizione (num % 3 == 0 && num % 5 !=0)
+    else if (num % 3 == 0 ) { // potrei anche usare questa condizione (num % 3 == 0 && num % 5 !=0) se il primo if e in basso ()&& num % 15 !=0)
         console.log('Fizz');
     }
-    else if(num % 5 == 0 && num % 15 !=0) {// potrei anche usare questa condizione (num % 3 == 0 && num % 3 !=0)
-        console.log('Buzz');
-    }
 
-    else if (num % 15 == 0) {// potrei anche usare questa condizione (num % 3 == 0 && num % 5 ==0)
-        console.log('FizzBuzz');
+    else if(num % 5 == 0 ) {// potrei anche usare questa condizione (num % 3 == 0 && num % 3 !=0) se il primo if e in basso ()&& num % 15 !=0)
+        console.log('Buzz');
     }
 
     else {
